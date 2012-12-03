@@ -30,6 +30,13 @@ public class person {
 	{
 		return email;
 	}
+	void setPerson (String n, String v, String e)
+	{
+		name 	= n;
+		vorname = v;
+		email 	= e;
+	}
+	/*
 	void setName(String neuName)
 	{
 		name = neuName;
@@ -42,4 +49,5 @@ public class person {
 	{
 		name = neuEmail;
 	}
+	*/
 }
