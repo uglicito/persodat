@@ -13,7 +13,7 @@
  *
  */
 public class person {
-	
+	// kommentar
 	String name;
 	String vorname;
 	String email;
