@@ -1,22 +1,9 @@
-/**
- * 
- */
 
-/**
- * For eine Personendatei gibt es mehrere Methoden
- * 	-> Records erstellen
- *	-> Records ausgeben
- *	-> Datei auslesen
- * 	-> Datei schreiben
- * 	-> Datei löschen
- * @author user
- * 
- *
- */
-public class Main {
-	public static void main(String[] args) {
+public class Main{
+		public static void main(String[]args){
 	
 	int wahl;
+	
 	do {
 		System.out.println("		Persodat - Kontaktverwaltung");
 		System.out.println("Wollen Sie...");
@@ -27,10 +14,20 @@ public class Main {
 		System.out.println("Records aus einer Datei laden >4");
 		System.out.println("                Datei Löschen >5");
 		System.out.println("       das Programm verlassen >6");
-		
-		wahl=StdInput.readInt();
+		System.out.println();
+		wahl=StdInput.readInt("Ihre Eingabe von 1-6: ");
 		
 		} while (wahl>6 || wahl<1);
+	switch (wahl)
+	{
+//		case 1: Person neu = new Person; break;
+		
+//		case 2:  System.out.println("Gut");break;
+//		case 3:  System.out.println("Befriedigend");break;
+//		case 4:  System.out.println("Ausreichend");break;
+//		case 5:  System.out.println("Mangelhaft");break;
+//		case 6:  System.out.println("Ungenügend");break;
+	}
 
 	}
 
