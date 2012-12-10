@@ -30,7 +30,7 @@ public class Main {
 		
 		wahl=StdInput.readInt();
 		
-		} while (wahl>6);
+		} while (wahl>6 || wahl<1);
 
 	}
 

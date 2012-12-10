@@ -29,11 +29,12 @@ public class person {
 	{
 		return email;
 	}
-	void setPerson (String n, String v, String e)
+	public void setPerson ()
 	{
 		name	=StdInput.readString("Name    : ");
 		vorname =StdInput.readString("Vorname : ");
 		email 	=StdInput.readString("E-Mail  : ");
+		
 	}
 	/*
 	void setName(String neuName)
