@@ -12,29 +12,24 @@
  * @author user
  *
  */
-public class person {
+public class person{
 	String name;
 	String vorname;
 	String email;
 	
-	String getName()
-	{
+	String getName(){
 		return name;
 	}
-	String getVorname()
-	{
+	String getVorname(){
 		return vorname;
 	}
-	String getEmail()
-	{
+	String getEmail(){
 		return email;
 	}
-	public void setPerson ()
-	{
+	public void setPerson (){
 		name	=StdInput.readString("Name    : ");
 		vorname =StdInput.readString("Vorname : ");
 		email 	=StdInput.readString("E-Mail  : ");
-		
 	}
 	/*
 	void setName(String neuName)
