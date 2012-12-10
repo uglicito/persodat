@@ -17,7 +17,6 @@ public class Main {
 	public static void main(String[] args) {
 	
 	int wahl;
-	// kommentar hallo
 	do {
 		System.out.println("		Persodat - Kontaktverwaltung");
 		System.out.println("Wollen Sie...");

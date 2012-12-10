@@ -13,7 +13,6 @@
  *
  */
 public class person {
-	// kommentar
 	String name;
 	String vorname;
 	String email;
@@ -32,9 +31,9 @@ public class person {
 	}
 	void setPerson (String n, String v, String e)
 	{
-		name 	= n;
-		vorname = v;
-		email 	= e;
+		name	=StdInput.readString("Name    : ");
+		vorname =StdInput.readString("Vorname : ");
+		email 	=StdInput.readString("E-Mail  : ");
 	}
 	/*
 	void setName(String neuName)
