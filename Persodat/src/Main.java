@@ -4,7 +4,7 @@ public class Main{
 	
 	int wahl;
 	
-	do {
+	for (;;) {
 		System.out.println("		Persodat - Kontaktverwaltung");
 		System.out.println("Wollen Sie...");
 		System.out.println();
@@ -17,18 +17,18 @@ public class Main{
 		System.out.println();
 		wahl=StdInput.readInt("Ihre Eingabe von 1-6: ");
 		
-		} while (wahl>6 || wahl<1);
-	switch (wahl)
-	{
-//		case 1: Person neu = new Person; break;
+		//while (wahl>6 || wahl<1);
+		switch (wahl)
+		{
+			case 1:	Person neu = new Person(); 
+					neu.setPerson(); break;
 		
 //		case 2:  System.out.println("Gut");break;
 //		case 3:  System.out.println("Befriedigend");break;
 //		case 4:  System.out.println("Ausreichend");break;
 //		case 5:  System.out.println("Mangelhaft");break;
 //		case 6:  System.out.println("Ungenügend");break;
+		}
 	}
-
-	}
-
+  }
 }
