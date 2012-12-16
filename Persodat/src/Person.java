@@ -1,5 +1,6 @@
 public class Person{
-	String name;
+	/*
+	  String name;
 	String vorname;
 	String email;
 	
@@ -24,26 +25,29 @@ public class Person{
 	}
 	String getEmail(){
 		return email;
-	}
+	}   
+	 */
 	public void setPerson(){
 		
-		String[][] persMatrix = new String[5][];
+		int b;
+		int i;
 		
-		for (int i=0; i < persMatrix.length; i++){
-			
-			int b;
-			
-			do{
+		String[][] persMatrix;
+		persMatrix = new String[5][3];
+		
+		for (i=1; i < persMatrix.length; i++){
+			if (i!=1){
+				i=i-1;
+				System.out.println(i+" "+persMatrix[i][0]+" "+persMatrix[i][1]+" "+persMatrix[i][2]);
+				System.out.println("Sind die Eingaben Korrekt?");
+			}			
 				System.out.println("Möchten Sie eine weitere Person Aufnehmen?");
 				b=StdInput.readInt("Geben Sie bitte "+1+" für Ja und "+0+" für Nein ein");
-			}while(b<0 || b>2);
-			
 			if (b==1){
-					persMatrix[0][i]	=StdInput.readString("Name    : ");
-					persMatrix[1][i]	=StdInput.readString("Vorname : ");
-					persMatrix[2][i] 	=StdInput.readString("E-Mail  : ");
+					persMatrix[i][0]	=StdInput.readString("Name    : ");
+					persMatrix[i][1]	=StdInput.readString("Vorname : ");
+					persMatrix[i][2] 	=StdInput.readString("E-Mail  : ");
 			}
-			
 			else{
 				System.out.println(i+" "+persMatrix[i][0]+" "+persMatrix[i][1]+" "+persMatrix[i][2]);
 				break;
