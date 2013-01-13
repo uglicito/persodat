@@ -13,8 +13,8 @@ public class Person{
 				int d = 0;
 			
 				persMatrix[i][0]	=StdInput.readString("Name    : ");
-				//persMatrix[i][1]	=StdInput.readString("Vorname : ");
-				//persMatrix[i][2] 	=StdInput.readString("E-Mail  : ");
+				persMatrix[i][1]	=StdInput.readString("Vorname : ");
+				persMatrix[i][2] 	=StdInput.readString("E-Mail  : ");
 				
 				System.out.println("PersNr: "+i+" "+persMatrix[i][0]+" "+persMatrix[i][1]+" "+persMatrix[i][2]);
 				System.out.println("Sind die Eingaben Korrekt?");
