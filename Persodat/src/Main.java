@@ -3,7 +3,8 @@ public class Main{
 		public static void main(String[]args){
 	
 			int wahl;
-			Person p = new Person();
+			Person p 	= new Person();
+			ReadWrite w = new ReadWrite();
 	
 			for (;;) {
 				System.out.println("		Persodat - Kontaktverwaltung");
@@ -23,7 +24,7 @@ public class Main{
 				{
 				case 1:		p.setPerson();		break;
 				case 2:		p.printPerson();	break;
-//		case 3:  System.out.println("Befriedigend");break;
+				case 3:							break;
 //		case 4:  System.out.println("Ausreichend");break;
 //		case 5:  System.out.println("Mangelhaft");break;
 //		case 6:  System.out.println("Ungenügend");break;
