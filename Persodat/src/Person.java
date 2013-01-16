@@ -39,12 +39,11 @@ public class Person{
 				else{
 					break;
 				}
-
 		}
 		
 	}
 
-	public void printMatrix(){
+	public void printPerson(){
 		for (int i=0; i <=persMatrix.length; i++)
 		{
 			System.out.println(persMatrix[i][0]+"\t"+persMatrix[i][1]+"\t"+persMatrix[i][2]);
