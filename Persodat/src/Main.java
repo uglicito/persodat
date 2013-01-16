@@ -22,8 +22,7 @@ public class Main{
 				{
 				case 1:	Person neu = new Person(); 
 						neu.setPerson(); break;
-		
-//		case 2:  System.out.println("Gut");break;
+				case 2:	System.out.println(persMatrix[1][1]); break;
 //		case 3:  System.out.println("Befriedigend");break;
 //		case 4:  System.out.println("Ausreichend");break;
 //		case 5:  System.out.println("Mangelhaft");break;
