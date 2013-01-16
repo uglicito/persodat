@@ -1,13 +1,14 @@
 public class Person{
+	
+	String[][] persMatrix;
+	persMatrix = new String[6][3];
+	
+	int c = 0;
+	int i = 0;
+	int z;
+	
 	public void setPerson(){
-		
-		int c = 0;
-		int i = 0;
-		int z;
-		
-		String[][] persMatrix;
-		persMatrix = new String[6][3];
-		
+				
 		for (i=0; i <=persMatrix.length; i++){
 				
 				int d = 0;
@@ -38,6 +39,16 @@ public class Person{
 				else{
 					break;
 				}
+
 		}
- }
+		
+	}
+
+	public void printMatrix(){
+		for (int i=0; i <=persMatrix.length; i++)
+		{
+			System.out.println(persMatrix[i][0]+"\t"+persMatrix[i][1]+"\t"+persMatrix[i][2]);
+		}
+		
+	}
 }
