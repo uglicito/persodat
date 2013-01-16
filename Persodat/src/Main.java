@@ -18,8 +18,7 @@ public class Main{
 				System.out.println("       das Programm verlassen >6");
 				System.out.println();
 				wahl=StdInput.readInt("Ihre Eingabe von 1-6: ");
-		
-				//	while (wahl>6 || wahl<1);
+				
 				switch (wahl)
 				{
 				case 1:		p.setPerson();		break;
