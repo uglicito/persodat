@@ -1,7 +1,6 @@
 public class Person{
 	
-	String[][] persMatrix;
-	persMatrix = new String[6][3];
+	String[][] persMatrix = new String[6][3];
 	
 	int c = 0;
 	int i = 0;
