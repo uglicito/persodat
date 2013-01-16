@@ -3,6 +3,7 @@ public class Main{
 		public static void main(String[]args){
 	
 			int wahl;
+			Person p = new Person();
 	
 			for (;;) {
 				System.out.println("		Persodat - Kontaktverwaltung");
@@ -20,10 +21,8 @@ public class Main{
 				//	while (wahl>6 || wahl<1);
 				switch (wahl)
 				{
-				case 1:	Person neu = new Person(); 
-						neu.setPerson(); break;
-				case 2:	Person zwischenspeicher = new Person();
-						zwischenspeicher.printMatrix(); break;
+				case 1:		p.setPerson();		break;
+				case 2:		p.printPerson();	break;
 //		case 3:  System.out.println("Befriedigend");break;
 //		case 4:  System.out.println("Ausreichend");break;
 //		case 5:  System.out.println("Mangelhaft");break;
