@@ -5,14 +5,14 @@ public class Person{
 	int y;
 	
 	
-	public void setPerson(){
+	public void setPerson(){					// Es können max 5 Personen mit 3 Attributen eingegeben werden 
 	
 		int c	= 0;
 		int d	= 0;
 		int z;
 		y 		= 0;	// Der Counter muss bei jedem erneutem Aufruf von setPerson() zurückgesetzt werden.
 	
-		for (i=0; i <persMatrix.length; i++){								// Ein füllen der letzten Spalte fürht zu einem out of Bounds 
+		for (i=0; i <persMatrix.length; i++){								// Ein füllen der letzten Spalte führt zu einem out of Bounds 
 				
 				persMatrix[i][0]	=StdInput.readString("Name    : ");		// Kann beliebig erweitert werden
 				persMatrix[i][1]	=StdInput.readString("Vorname : ");
