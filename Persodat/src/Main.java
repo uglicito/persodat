@@ -26,7 +26,7 @@ public class Main{
 				case 3:							break;
 //		case 4:  System.out.println("Ausreichend");break;
 //		case 5:  System.out.println("Mangelhaft");break;
-//		case 6:  System.out.println("Ungenügend");break;
+				case 6:  System.exit(0); break;
 				}
 			}
   }
