@@ -27,7 +27,7 @@
 // http://docs.oracle.com/javase/tutorial/essential/io/objectstreams.html
 import java.io.*;
 
-public class ReadWrite
+public class ReadWrite 
 {
 	public void write()
 	{

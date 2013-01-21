@@ -45,7 +45,7 @@ public class Person{
 	}
 
 	public void printPerson(){		
-		for (i=0; i <y; i++)				// Gibt nur die Werte mittel y-Counter aus welche bei dem letzten durchlauf der Methode setPerson() erzeugt wurden.
+		for (i=0; i <y; i++)				// Gibt nur die Werte mittels y-Counter aus welche bei dem letzten durchlauf der Methode setPerson() erzeugt wurden.
 		{
 			System.out.println(persMatrix[i][0]+"\t"+persMatrix[i][1]+"\t"+persMatrix[i][2]);
 		}
