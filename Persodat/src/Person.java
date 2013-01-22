@@ -2,6 +2,7 @@ public class Person{
 	
 	String[][] persMatrix = new String[5][3];	// Das Array und die Variablen müssen hier initalisiert und erzeugt werden, da 2 Methoden auf diese zugreifen. 
 	int i;
+	int j;
 	int y;
 	
 	
@@ -10,7 +11,7 @@ public class Person{
 		int c	= 0;
 		int d	= 0;
 		int z;
-		y 		= 0;	// Der Counter muss bei jedem erneutem Aufruf von setPerson() zurückgesetzt werden.
+		y 		= 0;							// Der Counter muss bei jedem erneutem Aufruf von setPerson() zurückgesetzt werden.
 	
 		for (i=0; i <persMatrix.length; i++){								// Ein füllen der letzten Spalte führt zu einem out of Bounds 
 				
@@ -22,33 +23,38 @@ public class Person{
 				System.out.println("Sind die Eingaben Korrekt?");
 				c=StdInput.readInt("Geben Sie bitte 1 für Ja und 0 für Nein ein.");
 				
-				if (c==0){					// Prüfung ob die Eingabe korrekt war, bei 0 ist sie falsch und das Array wird eine Zeile in der for-Schleife zurückgesetzt 
+				if (c==0){						// Prüfung ob die Eingabe korrekt war, bei 0 ist sie falsch und das Array wird eine Zeile in der for-Schleife zurückgesetzt 
 					i--;
 					continue;
 				}
 				
-				else if (i!=4){ 			// Solange das Array die Zeile 5 nicht erreicht hat führe diese Schleife aus.
-					z=4-i;					// 4 minus Anzahl der Arrayzeile, ergibt die Anzahl der weiteren möglichen Personen 
+				else if (i!=4){ 				// Solange das Array die Zeile 5 nicht erreicht hat führe diese Schleife aus.
+					z=4-i;						// 4 minus Anzahl der Arrayzeile, ergibt die Anzahl der weiteren möglichen Personen 
 					System.out.println("Möchten Sie eine weitere Person Aufnehmen?");
 					System.out.println("Es koennen noch "+z+" weitere Personen aufgenommen werden.");
 					d=StdInput.readInt("Geben Sie bitte 1 für Ja und 0 für Nein ein.");
-					y++;					// Counter für die Methode printPerson damit keine Überflüssigen null-werte ausgegeben werden
-					if (d==1){				// Prüfung ob eine weitere Person ins array geschrieben werden soll
-						continue;			// Continue führt vorzeitig an den Anfang der for-Schleife
-					}		
+					y++;						// Counter für die Methode printPerson damit keine Überflüssigen null-werte ausgegeben werden
+					}
+				if (d==1){						// Prüfung ob eine weitere Person ins array geschrieben werden soll
+					continue;					// Continue führt vorzeitig an den Anfang der for-Schleife
 				}
 				else{
-					break;					// break erzeugt den vorzeitigen Austieg aus der for-Schleife 
+					System.out.println();
+					break;						// break erzeugt den vorzeitigen Austieg aus der for-Schleife 
 				}
 		}
 		
 	}
 
-	public void printPerson(){		
-		for (i=0; i <y; i++)				// Gibt nur die Werte mittels y-Counter aus welche bei dem letzten durchlauf der Methode setPerson() erzeugt wurden.
+	public void printPerson(){
+		for (i=0; i < y ; i++)					// Gibt nur die Werte mittels y-Counter aus welche bei dem letzten durchlauf der Methode setPerson() erzeugt wurden.
 		{
-			System.out.println(persMatrix[i][0]+"\t"+persMatrix[i][1]+"\t"+persMatrix[i][2]);
+			for(j=0; j < 3; j++) 
+			{
+				System.out.print(persMatrix[i][j]+"\t");
+			}
+			System.out.println();
 		}
-		
+			
 	}
 }

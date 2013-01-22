@@ -1,38 +1,32 @@
-/**
-  http://stackoverflow.com/questions/5820508/writing-an-array-to-a-file-in-java
-  public void save(String fileName) throws FileNotFoundException {
-    BufferedWriter writer = null;
-    try {
-
-        writer = new BufferedWriter(new FileWriter(fileName));
-        for ( int i = 0; i < nbrMovies; i++)
-        {      
-          writer.write(movies[i].getName());
-          writer.newLine();
-      writer.flush();
-        }
-
-    } catch(IOException ex) {
-        ex.printStackTrace();
-    } finally{
-        if(writer!=null){
-            writer.close();
-        }  
-    }
-}
- @author user
-
-*/
-
 // http://docs.oracle.com/javase/tutorial/essential/io/objectstreams.html
 import java.io.*;
 
-public class ReadWrite
+public class ReadWrite extends Person
 {
 	public void write()
 	{
-		Person pw 	= new Person();
-		ObjectOutputStream datei = new ObjectOutputStream (new FileOutputStream("Person.txt"));
-		datei.write(pw.printPerson()); // versuch eine Metode zu verweden 
+		
+		String datei = StdInput.readString("Geben Sie einen Dateinamen ein: z.B. Datei");
+				
+		try
+		{
+			PrintWriter pw = new PrintWriter(datei); // wird im Programmverzeichnis angelegt
+			
+			for (int i = 0; i < y; i++){
+				for (int j = 0; j<persMatrix.length; j++){
+					
+					pw.print(persMatrix[i][j]+",");
+					pw.flush();
+				}
+				System.out.println();
+			}
+			pw.close();
+		}
+		catch(ArrayIndexOutOfBoundsException e){
+			System.out.println(e);
+		}
+		catch(FileNotFoundException f){
+			System.out.println(f);
+		}
 	}
 }
